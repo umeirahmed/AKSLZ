@@ -45,7 +45,7 @@ resource aksCluster 'Microsoft.ContainerService/managedClusters@2022-04-01' = {
         count: 3
         minCount: enableAutoScaling ? 1 : null
         maxCount: enableAutoScaling ? 3 : null
-        vmSize: 'Standard_D4d_v5'
+        vmSize: 'Standard_B2s'
         osDiskSizeGB: 30
         type: 'VirtualMachineScaleSets'
         vnetSubnetID: subnetId
